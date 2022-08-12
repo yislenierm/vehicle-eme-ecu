@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "Custom BUCK DC DC")(type "KiCad")(uri "${KIPRJMOD}/xl7005A.kicad_sym")(options "")(descr "Custom xl7005a Buck DC DC Converter "))
+  (lib (name "ib1212s")(type "KiCad")(uri "${KIPRJMOD}/ib1212s.kicad_sym")(options "")(descr ""))
+)

@@ -1,0 +1,2 @@
+Copy, paste and replace the library folder with the attatched library folder on your Arduino IDE's System folder. 
+Contact me at casithebuilder@gmail.com for concerns. Thank you!

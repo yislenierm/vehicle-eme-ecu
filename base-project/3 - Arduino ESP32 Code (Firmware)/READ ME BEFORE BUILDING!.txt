@@ -1,0 +1,11 @@
+DISCLAIMER:
+- This project involves dangerous voltages and power levels! I am not liable to any damages or accidents
+  that could result from attempting this experimental design. While tests have been done, it has not
+  undergone tests for commercial use and certification.
+
+COMPLETE GUIDE:
+- The video tutorial is just a summary. Carefully read the complete written instructable tutorial before
+  attempting this project. The written tutorial will always be updated for solving issues encountered by
+  other enthusiasts in building this project. 
+
+  (link: https://www.instructables.com/DIY-1kW-MPPT-Solar-Charge-Controller/)

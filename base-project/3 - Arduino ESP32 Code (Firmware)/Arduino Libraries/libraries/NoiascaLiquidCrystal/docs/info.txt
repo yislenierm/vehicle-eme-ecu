@@ -1,0 +1,44 @@
+
+
+LCD API 1.0
+ https://playground.arduino.cc/Code/LCDAPI/
+ 
+LCD Reference
+  https://www.arduino.cc/en/Reference/LiquidCrystal
+ 
+ 
+I2C Backpacks are usually wired as follows:
+
+  P0 RS
+  P1 RW
+  P2 EN
+  P3 Backlight circuitry (HIGH signal enables backlight using a simple NPN transistor)
+  P4 DB4
+  P5 DB5
+  P6 DB6
+  P7 DB7
+
+  So connect 
+  LCD          PCF
+  -------------------
+  VSS
+  VDD
+  V0                      contrast
+  RS           P0 RS
+  RW           P1 RW
+  E            P2 EN
+  DB0          -
+  DB1          -
+  DB2          -
+  DB3          -
+  D4           P4 DB4
+  D5           P5 DB5
+  D6           P6 DB6
+  D7           P7 DB7
+  LEDA         
+  LEDK         P3 Backlight circuitry (HIGH signal enables backlight using a simple NPN transistor)
+alternative:
+R Cat 
+G Cat
+B Cat
+             

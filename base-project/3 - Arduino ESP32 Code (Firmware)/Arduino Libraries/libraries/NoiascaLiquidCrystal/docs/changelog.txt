@@ -1,0 +1,59 @@
+Changelog for the Noiasca Liquid Crystal
+1.2.4 Releae Candidate 2021-04-05
+- added support for 4004 displays in parallel 4bit
+- SPLC780D1_002A Cyrillic - minor fixes and tested with real hardware
+
+1.2.3 Release Candidate 2021-02-27
+- all converters: hardened against malformed UTF-8 data
+- several language specific examples
+- added lot of special characters needed for Latin alphabet
+- internal cleanup / file structure
+- renamed convert_ANSI to convert_ASCII
+- added support for SPLC780D1_002A Cyrillic (compiles but tested without HW)
+- Cyrillic converter + examples
+
+1.2.2 Relase Candidate 2021-02-06
+- added some more convert examples, adopted the 3rd party library examples
+- 4bit: added example for backlight control
+- 4bit: reverted backlight control to former state.
+- several examples updated
+
+1.2.1 Release Candidate 2021-01-06
+- 4bit: improved backlight control
+- wire: setRGB(uint32_t newColor) overload takes one colorcode; internal: rework of backlight(), noBacklight(); rgbSET() with autoincrement
+- parallel 4bit: digitalWriteFast for faster write routine
+- replacement of letters with diacritic (glyph) by the diacritic-less form of the character if not supported by the LCD IC 
+
+1.2.0 Release Candidate 2020-10-06
+- New Hardware: SPLC780D1 ROM 003A (European Character Set)
+
+1.1.0 Release Candidate 2020-09-05 Noiasca Liquid Crystal
+- new name for library
+- old library structure to support different hardware/io
+- LCD with SPI MCP23S08 support
+- Surenoo/Grove display with native I2C support and RGB background LED
+- parallel 4bit display
+
+1.0.2 Release Candidate 2020-05-18 Noiasca Liquid Crystal I2C
+- put special characters from RAM to PROGMEM
+- put UTF8-LCD charset mapping source code to PROGMEM table
+- LiquidCrystal_I2C_ST7070 supports partial second pattern of ST7070
+- LiquidCrystal_I2C_ST7070_Ext extended character support for ST7070
+- restructue, large = default, replace large by small
+
+1.0.1 Release Candidate 2020-05-02 Noiasca Liquid Crystal I2C
+- cleanup init() and begin()
+- init() and begin() report an error if I2C fails
+- conditional call Wire.begin on AVR controllers only
+- discontinued the support for Arduino IDE older than 1.0
+- LiquidCrystal_I2C         Ä->A    capital letter without paranthesis
+  LiquidCrystal_I2C_Large   Ä->A    capital letter without paranthesis
+  LiquidCrystal_I2C_Ae      Ä->Ae   use additional e
+  LiquidCrystal_I2C_Small   Ä->ä    small letter
+  LiquidCrystal_I2C_Special Ä->Ä    use special characters 5 6 and 7
+
+1.0.0 Release Candidate 2020-04-02 Noiasca Liquid Crystal I2C
+- support of special characters including German Umlauts ä ö ü ß
+
+Open topics - upcoming features
+- reduce special to two byte only
